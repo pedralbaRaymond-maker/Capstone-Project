@@ -1,0 +1,283 @@
+
+/* Container for the menu items */
+.menu1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    background-color: #343a40;
+}
+
+/* Styling for each order item */
+.Order-Item {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.Order-Item:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Image styling */
+.Order-Item .image {
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+/* Styling for order details */
+.order-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-details-sub {
+    margin-bottom: 15px;
+}
+
+.ads {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.order-price, .quantity {
+    font-size: 18px;
+    color: #ff5722;
+    margin-bottom: 8px;
+}
+.quantity {
+     color: #000000;
+}
+input {
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    border: 0.5px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.button-container {
+    display: flex; /* Align items side by side */
+    gap: 10px; /* Space between buttons */
+    font-size: 14px;
+    margin-left: 80%;
+    margin-top: 10%;
+}
+
+.button-container a {
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 4px; /* Round the corners */
+    font-weight: 600; /* Make text bold */
+    text-align: center; /* Center text inside the button */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.button-container a:hover {
+    background-color: #f48c06; /* Change background color on hover */
+    color: #fff;
+}
+
+.button-container .del {
+   text-decoration: none;  
+    color: #d00000;
+    font-weight: 600;
+}
+
+
+/* Container for total and buttons */
+.footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    margin: 30px auto;        
+    padding: 20px;    
+    width: 100%;   
+    max-width: 900px;   
+    background-color: #343a40;
+}
+
+/* Total price styling */
+.total {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    flex: 1;  
+    color: #ffffff;                      /* Push total to the left */
+}
+
+/* Container for buttons */
+.footer-buttons {
+    display: flex;                  /* Arrange buttons horizontally */
+    gap: 10px;                      /* Space between buttons */
+    margin-left: auto;              /* Push buttons to the right */
+}
+
+/* Button styling */
+.btn-orderlist {
+    /*background: linear-gradient(90deg, #fb8500 0%, #ffb703 100%);*/
+    background: #01183a;
+    border: none;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.btn-orderlist:hover {
+    background: linear-gradient(90deg, #212529 0%, #212529 100%);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+/* Back button styling */
+.btn-order-back {
+    background: linear-gradient(90deg, #009688 0%, #00796b 100%);
+    border: none;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block; 
+    text-align: center;
+    margin: 10px 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.btn-order-back a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-order-back:hover {
+    background: linear-gradient(90deg, #00796b 0%, #004d40 100%);
+    transform: scale(1.05);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+
+}
+/* display none on homepage.php*/
+
+.searchIcone {
+    display: none;
+}
+ 
+/* Responsive Styles */
+@media (max-width: 600px) {
+    
+    .menu {
+    	margin-bottom: 5px;
+	}
+
+    .Order-Item {
+        padding: 10px; /* Adjust padding */
+        margin: 10px auto; /* Reduce margin for smaller screens */
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .Order-Item .image {
+        width: 120px;
+   	 	height: 120px;
+    }
+    /* Styling for order details */
+	.order-details {
+	    flex: 2;
+	    display: flex;
+	    flex-direction: column;
+	}
+
+	.order-details-sub {
+	    margin-bottom: 15px;
+	}
+
+	.ads {
+	    font-size: 15px;
+	    font-weight: 600;
+	    margin-bottom: 10px;
+	}
+
+	.order-price{
+	    font-size: 15px;
+	    color: #ff5722;
+	    margin-bottom: 8px;
+	}
+
+    .button-container {
+    gap: 10px; /* Space between buttons */
+    margin-left: -70%;
+   
+    }
+    .button-container a {
+     padding: 8px 18px;
+    }
+    input {
+    width: 50px;
+    }
+    .del {
+    margin-left: 65%;
+    font-size: 15px;
+    font-weight: 600;
+    }
+    .footer {
+
+        margin: 0px; 
+        padding: 10px;  
+        width: 98%;           
+        max-width: none;  
+
+    }
+
+    .total {
+        font-size: 14px; /* Smaller font size for smaller screens */
+        margin-bottom: 5px; /* Add space below total */ 
+        
+        
+    }
+
+    .footer-buttons {
+        margin-left: 0; /* Remove margin-left */
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 5px; /* Space between buttons */
+        align-items: center; /* Center buttons horizontally */
+    }
+
+    .btn-orderlist, .btn-order-back {
+        padding: 14px 20px; /* Adjust padding for better fit */
+        font-size: 15px; /* Smaller font size */
+        margin: 5px; /* Adjust margin */
+    }
+}
+
+
+
+
+
+

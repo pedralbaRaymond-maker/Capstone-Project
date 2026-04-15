@@ -1,0 +1,119 @@
+/* General Reset for Flexibility */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Centering Grid Container */
+  .grid-container {
+    display: grid;
+    gap: 20px;
+    justify-items: center; /* Centers grid items horizontally */
+    align-items: center;   /* Centers grid items vertically */
+    width: 60%;
+    height: 50vh;
+    margin: 1% auto;
+    padding: 20px;
+  }
+  
+  /* Notifications Container */
+  .notifications-container {
+    width: 100%;
+    font-size: 0.975rem;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+ /* Notification Box Styling */
+.success {
+    display: flex;
+    align-items: center; /* Vertically align icon and text */
+    justify-content: center; /* Horizontally center the content */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(240 253 244);
+    border: 1px solid rgb(187, 247, 208);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    color: rgb(22 101 52); /* Text color, which will also apply to the icon */
+  }
+  
+  .success:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Flexbox container for icon and text */
+  .success .flex {
+    display: flex;
+    align-items: center; /* Vertically align icon and text */
+    justify-content: center; /* Center the whole content */
+    text-align: center; /* Ensure text is centered */
+    width: 100%;
+  }
+  
+  /* Icon Styling */
+  .success .succes-svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem; /* Space between the icon and text */
+    fill: currentColor; /* Makes the icon inherit the text color */
+  }
+  
+  /* Success Text Wrapper */
+  .success-prompt-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Keeps text centered */
+    width: 100%;
+  }
+  
+  .success-prompt-heading {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: inherit; /* Inherits the color from the parent .success */
+  }
+  
+  .success-prompt-prompt {
+    margin-top: 0.25rem;
+    font-size: 0.95rem;
+    color: inherit; /* Inherits the color from the parent .success */
+  }
+  
+  
+  
+  
+  /* Responsive Design */
+  
+  /* For small screens */
+  @media (max-width: 600px) {
+    .grid-container {
+      width: 90%;
+      height: auto;
+    }
+  }
+  
+  /* For medium screens */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .grid-container {
+      width: 75%;
+    }
+  }
+  
+  /* For large screens */
+  @media (min-width: 1025px) {
+    .grid-container {
+      width: 60%;
+    }
+  
+    .notifications-container {
+      max-width: 600px;
+    }
+  }
+  

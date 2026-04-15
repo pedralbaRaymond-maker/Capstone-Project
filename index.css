@@ -1,0 +1,133 @@
+body {
+    font-family: 'Georgia', serif; /* A more elegant font */
+    background-color: #7189c9; /* Background color */
+    margin: 0;
+    padding: 20px;
+    color: rgb(255, 255, 255);    
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.0em; /* Larger title for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Soft shadow for depth */
+    
+}
+
+form {
+    max-width: 290px;
+    width: 100%; /* Ensure it takes full width on smaller devices */
+    background: rgba(255, 255, 255, 0.95); /* Slightly less transparent for readability */
+    padding: 20px;
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+}
+
+select {
+    width: 100%;
+    padding: 12px; /* Increased padding for comfort */
+    margin-bottom: 20px;
+    border: 1px solid #d1d1d1; /* Softer border color */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9; /* Light background for the select */
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    background-color: #06207d; /* A warm blue color */
+    border: none;
+    border-radius: 4px;
+    color: rgb(28, 255, 28);
+    font-size: 18px; /* Slightly larger font */
+    font-weight: bold; /* Bolder text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5%;
+}
+
+button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.error {
+    color: #e74c3c; /* Match error color to button */
+    text-align: center;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+/* Additional styling for aesthetics */
+.container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em; /* Smaller footer text */
+    color: #ddd; /* Lighter footer text */
+}
+/* From Uiverse.io by kamehame-ha */ 
+.coolinput {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    position: static;
+    width: 100%;
+   
+  }
+  
+  .coolinput label.text {
+    font-size: 0.75rem;
+    color: #000000;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: #ffffff;
+    width: fit-content;
+  }
+  
+  .coolinput input[type=text].input {
+    padding: 15px 10px;
+    font-size: 0.75rem;
+    border: 2px #818CF8 solid;
+    border-radius: 5px;
+    background: #ffffff;
+  }
+  
+  .coolinput input[type=text].input:focus {
+    outline: none;
+  }
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller title on small screens */
+        margin-top: -40%;
+    }
+
+    button {
+        font-size: 16px; /* Smaller button text */
+    }
+
+    select {
+        font-size: 14px; /* Smaller select text */
+    }
+
+    form {
+        max-width: 400px;
+        width: 90%; /* Ensure it takes full width on smaller devices */
+    }
+
+}

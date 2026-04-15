@@ -1,0 +1,516 @@
+/* Reset and Box Sizing */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #343a40;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    height: 80px;
+    background: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 4%;
+    width: 10%;
+}
+
+.brand .inboxlogo {
+    transform: translate(1px, 8px);
+}
+
+.brand h1 {
+    margin-left: 5%;
+}
+
+.searchIcone {
+    position: relative;
+    width: 70%;
+    padding: 2%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.searchBox {
+    position: relative;
+    width: 60%;
+}
+
+.searchBox input {
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    padding: 1%;
+    text-indent: 5px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#SIcon {
+    position: relative;
+    left: -11%;
+    font-size: 12px;
+    color: #ffffff;
+    transform: translate(0px, 4px);
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+    z-index: 221;
+}
+
+ul {
+    width: 75%;
+    list-style-type: none; /* Ensure list items don't have default bullets */
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-left: 2%;
+    transition: all 0.5s ease;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 10px 19px 0;
+    height: 24px;
+    overflow: hidden;
+}
+
+ul li:hover {
+    height: 55px;
+}
+
+ul li #iconHeader {
+    display: block;
+}
+
+ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 2% 3%;
+}
+
+ul li a:active, ul li a:focus {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.noti_li {
+    position: relative;
+    right: 3%;
+}
+
+.notification_button {
+    position: relative;
+    display: inline-block;
+    right: 29%;
+}
+
+.noti_container {
+    position: relative;
+    display: inline-block;
+}
+
+.notify_label {
+    position: absolute;
+    bottom: 14px; /* Adjust as needed */
+    right: -7px; /* Adjust as needed */
+    background-color: #000000; /* Or any color you prefer */
+    color: #fff;
+    border-radius: 50%;
+    width: 15px; /* Adjust size as needed */
+    height: 15px; /* Adjust size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px; /* Adjust font size as needed */
+    font-weight: bold;
+}
+
+
+
+
+#menuIcon {
+    display: none;
+}
+
+/* Menu Styles */
+.menu {
+    background-color: #343a40;
+    padding: 0 80px 10px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px; /* Modern property for spacing */
+}
+
+/* Heading Styles */
+.heading {
+    background-color: #343a40;
+    color: #ffffff;
+    margin-bottom: 30px;
+    padding: 30px;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.heading > h1 {
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+
+.heading > h3 {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+/* Food Items Styles */
+.food-items {
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    height: 450px;
+}
+
+.food-items .image {
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 250px;
+    max-width: 100%;
+    border: 1px solid blue;
+}
+
+/* Details Section Styles */
+.details {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px; /* Define rows for details section */
+    gap: 15px; /* Space between rows */
+}
+
+.details-sub {
+    display: grid;
+    grid-template-columns: auto auto; /* Two-column layout */
+}
+
+.details-sub > h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.price {
+    display: flex;
+    font-size: 18px;
+    color: #bf0603;
+}
+
+.details > p {
+    color: #6f6f6f;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+}
+
+/* Button Styles */
+.button {
+    text-decoration: none;
+    text-align: center;
+    background-color: #000000;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 100%; /* Adjust width as needed */
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    line-height: 1.5; /* Add line-height for vertical alignment */
+    color: #fff;
+}
+
+.button a{
+    color: #ffffff;
+}
+
+.button:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.order-prod{
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+   
+}
+.order-price{  
+    text-align: left;
+    font-size: 18px;
+    color: #ff0000;
+    
+}
+.qty-label{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.quantity-container{
+    display: flex;
+    margin: 10px 0;
+    justify-content: left;
+}
+
+.quantity-label {
+    font-size: 18px;
+    color: #000;
+    margin-right: 2px;
+    font-weight: 700;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+
+
+/* Responsive Styles */
+
+/* Media Query for screens 600px and below */
+@media (max-width: 600px) {
+
+    header {
+        width: 100%;
+        height: 150px;
+    }
+
+    .brand {
+        justify-content: normal;
+        align-items: initial;
+    }
+
+    .brand h1 {
+        padding: 5px 80px;
+    }
+
+    .brand .inboxlogo {
+        transform: translate(75px, 8px);
+        width: 50px;
+    }
+
+    #menuIcon {
+        display: inline;
+        position: relative;
+        padding: 1%;
+        border-radius: 5%;
+        cursor: pointer;
+        border: 1px solid gray;
+        left: 62%;
+        top: 19%;
+        z-index: 3000;
+    }
+
+    .searchIcone {
+        position: relative;
+        display: block;
+        width: 60%;
+    }
+
+    .searchIcone ul {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        z-index: 1000;
+        margin-top: 90px;
+    }
+
+    .searchIcone ul li {
+        display: block;
+        margin-top: 30px;
+        width: 100%;
+        height: 45px;
+        text-align: left;
+        position: relative;
+        top: 20px;
+        padding: 1%;
+    }
+
+    .searchIcone ul li #iconHeader {
+        display: inline-block;
+        transform: translate(10px, 5px);
+        width: 30px;
+        height: 30px;
+    }
+
+    .searchIcone ul li:hover {
+        background: rgb(31, 31, 31);
+    }
+
+    .searchIcone ul li a {
+        margin-left: 40px;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+
+    .searchBox {
+        position: relative;
+        width: 140%;
+        top: 80px;
+        z-index: 100;
+        right: 60%;
+    }
+
+    .searchIcone.active ul {
+        display: block;
+    }
+    .notification_button {
+    position: relative;
+    display: inline-block;
+    right: -4%;
+    }
+    .notify_label {
+    bottom: 15px; /* Adjust as needed */
+    right: -15px;
+    }
+
+    /* Menu Styles */
+    .menu {
+        background-color: #343a40;
+        padding: 0 15px 10px 15px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        gap: 10px;
+    }
+
+    .heading {
+        background-color: #343a40;
+        color: #ffffff;
+        margin-bottom: 10px;
+        padding: 10px;
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    .heading > h1 {
+        font-weight: 200;
+        font-size: 16px;
+        letter-spacing: 10px;
+        margin-bottom: 10px;
+    }
+
+    .heading > h3 {
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 5px;
+    }
+
+    /* Food Items Styles */
+    .food-items {
+        display: grid;
+        position: relative;
+        grid-template-rows: auto 1fr;
+        border-radius: 15px;
+        background-color: #ffffff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        height: 260px;
+    }
+
+    .food-items .image {
+        position: relative;
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        height: 130px;
+        max-width: 150%;
+        border: 1px solid black;
+    }
+
+    /* Details Section Styles */
+    .details {
+        padding: 20px;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+    }
+
+    .details-sub {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .details-sub > h5 {
+        font-weight: 1000;
+        font-size: 11px;
+    }
+
+    .price {
+        font-size: 14px;
+        color: #bf0603;
+    }
+
+    .details > p {
+        color: #6f6f6f;
+        line-height: 20px;
+        font-weight: 400;
+        align-self: stretch;
+    }
+
+    /* Button Styles */
+    .button {
+        font-size: 14px;
+        padding: 10px;
+        width: 120px;
+        margin: 0.5% -1%;   
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        line-height: 1.5;
+        
+    }
+
+    .button:hover {
+        background-color: #333333;
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+    }
+}
+
+

@@ -1,0 +1,167 @@
+/* orderStyle.css */
+
+
+.Order-Item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 400px; /* Adjusted width for better fit */
+    max-height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.orderpage {
+    position: relative;
+    width: 100%;
+    border-radius: 2px solid #ddd;
+    border-bottom: 1px solid #000;
+}
+
+.order-details {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light grey background for content area */
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.order-details-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.order-details-header h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+    flex: 1; /* Allows the name to take up available space */
+}
+
+.order-price {
+    font-size: 20px;
+    color: #bf0603; /* Green color for positive accents */
+
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.quantity-label {
+    font-size: 16px;
+    color: #000;
+    margin-right: 2px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.button-container{
+    display: flex;
+    gap: 10px;
+    margin: 9px 10px;
+}
+.btn-order { 
+    background-color: #000814; /* Primary color for actions */
+    color: #ffffff;
+    border: none;
+    padding: 10px 60px ;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px 2px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.btn-order:hover {
+    background-color: #0056b3;
+}
+
+.btn-order:active {
+    background-color: #004080;
+    transform: scale(0.98);
+}
+
+.btn-order:last-child {
+     background: linear-gradient(90deg, #009688 0%, #00796b 100%);
+     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.btn-order:last-child:hover {
+    background: linear-gradient(90deg, #00796b 0%, #004d40 100%);
+    transform: scale(1.05);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+.btn-order:last-child:active {
+    background-color: #4e555b;
+    transform: scale(0.98);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .Order-Item {
+        max-width: 500px; /* Adjusted width for better fit */
+        max-height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+    }
+    .Order-Item img.image {
+        position: relative;
+        width: 90%;
+        border-radius: 2px solid #ddd;
+        border-bottom: 1px solid #000;
+        }
+    
+    .order-details-header {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .order-price {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    input[type="number"] {
+        width: 50px; /* Adjust width for better fit on mobile */
+        padding: 8px;
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .btn-order {
+        font-size: 15px; /* Smaller font size for buttons */
+        padding: 10px 40%; /* Adjust padding for buttons */   
+    }
+
+    .btn-order:last-child {
+        font-size: 15px; /* Smaller font size for buttons */
+        padding: 15% 40%; /* Adjust padding for buttons */
+    }
+    .Order-Item img.image {
+    position: relative;
+    width: 100%;
+    max-height: 370px;
+    border-radius: 2px solid #ddd;
+    border-bottom: 1px solid #000;
+    }
+}
